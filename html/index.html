@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ishit Aggarwal</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+   <style>
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 200px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #ff9900;
+}
+hr{ 
+  height: 1px;
+  color: red;
+  background-color:#ff9900;
+  border: none;
+}
+h1 {
+  font-weight: bold;
+  
+  font-size: 50px;
+}
+
+h2 {
+  font-weight: bold;
+  
+  font-size: 50px;
+}
+h3 {
+  font-weight: bold;
+  
+  font-size: 50px;
+}
+
+.sticky{
+  position: fixed;
+  top:0;
+  width:100%;
+  padding: 2px;
+}
+.jack{
+  padding-bottom: 500px;
+}
+
+
+
+   </style> 
+</head>
+<body bgcolor="black" font color="white">
+  <div id="navbar"><ul>
+  <li><a class="active"  href="#home">Home</a></li>
+  <li><a href="#jokes">Jokes</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul></div><br><br><br>
+<img src="tiger.jpg" height="600" width="800" alt="a tiger goes here" class="center">
+  
+  <h1 id="about" align="center" style="color:#ff9900">About Me</h1>
+  <hr>
+  <p class="jack" align="center"style="color:white"> i got fired from my job at bank.<br> an old lady came in and asked me to check her balance, so i pushed her over.</p>
+
+  <h2  style="color:#ff9900" align="center" id="contact">Contact</h2><hr>
+
+<font size="30"><p class="jack" align="center"style="color:white"> ishitaggarwal0407@gmail.com</font><br>that's the only way you can contact me</p>
+<h3 id="jokes" align="center" style="color:#ff9900">Jokes</h3>
+<hr>
+<p class="jack" id="jokes" align="center"style="color:white">padhai likhai me koi dhyaan h nhi; jokes padhenge</p>
+<script type="text/javascript">
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+ 
+function myFunction() {
+
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+ 
+  } else {
+     navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
